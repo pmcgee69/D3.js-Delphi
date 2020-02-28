@@ -1,0 +1,170 @@
+<!-- Code from d3-graph-gallery.com -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Load d3.js 
+<script src="https://d3js.org/d3.v4.js"></script>
+-->
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
+
+<body>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script>
+        var url = "https://gist.githubusercontent.com/d3byex/8fcf43e446b1e4dd0146/raw/7a11679cb4a810061dee660be0d30b6a9fe69f26/lfp_all.csv";
+        d3.csv(url, function (error, rawData) {
+            var data = rawData.map(function (d) {
+                return {
+                    CountryCode: d.CountryCode,
+                    CountryName: d.CountryName,
+                    LifeExp: +d.LifeExp,
+                    FertRate: +d.FertRate,
+                    Population: +d.Population,
+                    Region: d.Region,
+                    Year: d.Year
+                };
+            });
+
+            var nested = d3.nest().key(function (d) { return d.Year; })
+            .sortKeys(d3.ascending)
+            .map(data);
+
+
+
+            var minBubbleSize = 5, maxBubbleSize = 50;
+            var margin = {
+                left: maxBubbleSize, top: maxBubbleSize,
+                bottom: maxBubbleSize, right: maxBubbleSize
+            };
+
+            var axisPadding = 10;
+            var graphWidth = 500, graphHeight = 400;
+            var totalWidth = graphWidth + margin.left + margin.right;
+            var totalHeight = graphHeight + margin.top + margin.bottom;
+
+            var lifeExpectancy = data.map(function (d) { return d.LifeExp; });
+            var fertilityRate = data.map(function (d) { return d.FertRate; });
+            var population = data.map(function (d) { return d.Population; });
+            var regions = data.map(function (d) { return d.Region; });
+
+            var xScale = d3.scale.linear()
+                .domain([d3.min(lifeExpectancy), d3.max(lifeExpectancy)])
+                .range([0, graphWidth]);
+
+            var yScale = d3.scale.linear()
+                .domain([d3.max(fertilityRate), 0])
+                .range([0, graphHeight]);
+
+            var popDomain = [d3.min(population), d3.max(population)];
+            var popScale = d3.scale.linear()
+                .domain(popDomain)
+                .range([minBubbleSize, maxBubbleSize]);
+
+            var uniqueRegions = d3.set(regions).values();
+            var regionColorMap = d3.scale.ordinal()
+                .domain(uniqueRegions)
+                .range(d3.scale.category10().range());
+
+
+            var svg = d3.select('body')
+                .append('svg')
+                .attr('width', totalWidth)
+                .attr('height', totalHeight);
+
+            var yAxis = d3.svg.axis().scale(yScale).orient('left');
+            var yAxisNodes = svg.append('g')
+                .attr('transform', 'translate(' + (margin.left - axisPadding) + ',' + margin.top + ')')
+                .call(yAxis);
+            styleAxisNodes(yAxisNodes);
+            var xAxis = d3.svg.axis().scale(xScale).orient('bottom');
+            var xAxisNodes = svg.append('g')
+                .attr('transform', 'translate(' + margin.left + ',' + (totalHeight - margin.bottom + axisPadding) + ')')
+                .call(xAxis);
+            styleAxisNodes(xAxisNodes);
+
+
+            var yearLabel = svg.append('g')
+                .append('text')
+                .attr('transform', 'translate(40, 450)')
+                .attr('font-size', '75');
+
+            var bubblesHolder = svg.append("g");
+
+            var interval = 100;
+
+            function render(year) {
+                var dataForYear = nested[year];
+
+                var bubbles = bubblesHolder
+                    .selectAll("circle")
+                    .data(dataForYear, function (datum) {
+                        return datum.CountryCode;
+                    });
+
+                bubbles.enter()
+                    .append("circle")
+                    .each(setItemAttributes);
+
+                bubbles
+                    .transition()
+                    .duration(interval)
+                    .each(setItemAttributes);
+
+                bubbles.exit().remove();
+
+                yearLabel.text(year);
+
+            };
+
+            function setItemAttributes(d) {
+                d3.select(this).attr({
+                    cx: xScale(d.LifeExp),
+                    cy: yScale(d.FertRate),
+                    r: popScale(d.Population),
+                    style: "fill:" + regionColorMap(d.Region) + ";" +
+                        "fill-opacity:0.5;" +
+                        "stroke:" + regionColorMap(d.Region) + ";"
+                });
+            };
+
+
+            var minYear = d3.min(data, function (d) { return d.Year; });
+            var maxYear = d3.max(data, function (d) { return d.Year; });
+
+            var currentYear = minYear;
+            render(currentYear);
+
+            var callback = function () {
+                return function () {
+                    currentYear++;
+                    console.log(currentYear);
+                    if (currentYear <= maxYear) {
+                        render(currentYear);
+                        d3.timer(callback(), interval);
+                    }
+                    return true;
+                }
+            }
+
+            d3.timer(callback(), interval);
+
+        });
+
+        function styleAxisNodes(axisNodes) {
+            axisNodes.selectAll('.domain')
+                .attr({
+                    fill: 'none',
+                    'stroke-width': 1,
+                    stroke: 'black'
+                });
+            axisNodes.selectAll('.tick line')
+                .attr({
+                    fill: 'none',
+                    'stroke-width': 1,
+                    stroke: 'black'
+                });
+        }
+    </script>
+</body>
+</html>
