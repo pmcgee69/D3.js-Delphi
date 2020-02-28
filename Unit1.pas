@@ -42,9 +42,9 @@ end;
 procedure TForm1.FormCreate(Sender: TObject);
 begin
     wd := GetCurrentDir;
-    wd := TDirectory.GetParent(wd);
-    wd := TDirectory.GetParent(wd);
-    wd := FilePathToURL(wd)+'/';
+    //wd := TDirectory.GetParent(wd);    //  Delphi / C++Builder IDE specific.  
+    //wd := TDirectory.GetParent(wd);    //  .exe is 2 directories down from the source files.
+    wd := FilePathToURL(wd)+'/';         //  Uncomment to run in IDE, or place html files with .exe 
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
