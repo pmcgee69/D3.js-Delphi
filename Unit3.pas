@@ -83,9 +83,9 @@ procedure TForm1.FormCreate(Sender: TObject);
 begin
     fWBW := TWebBrowserWrapper.Create(WebBrowser1);
     wd   := GetCurrentDir;
-    wd   := TDirectory.GetParent(wd);
-    wd   := TDirectory.GetParent(wd);
-    wd   := wd+'/' {FilePathToURL(wd)+'/'};          // WBW auto adds 'FILE://'
+    wd   := TDirectory.GetParent(wd);                 // up two directories running in the IDE
+    wd   := TDirectory.GetParent(wd);                 // comment out if [html] files are located with .exe
+    wd   := wd+'/'; {FilePathToURL(wd)+'/';}          // WBW auto adds 'FILE://'
 end;
 
 procedure TForm1.FormDestroy(Sender: TObject);
