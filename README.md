@@ -2,10 +2,6 @@
 
 Test project for displaying d3.js graphics in a TWebBrowser.
 
-- 01 Mar 2020:  Delphi IDE places .exe 2 levels down from source files.  Check directory references for running outisde exe.
-
-- 18 Mar 2020:  Tidied up the directories/files.  Added Carbon syntax-highlighting examples (will not work with TWebBrowser).
-
 
 Other Delphi browser projects.
 
@@ -36,3 +32,9 @@ Demonstration 1: https://youtu.be/pPhYZ9wAvbE
 
 Demonstration 2: https://youtu.be/TjKuMoU2kBg
 
+
+Notes.
+
+- 01 Mar 2020:  Delphi IDE places .exe 2 levels down from source files.  Check directory references for running outisde exe.
+
+- 18 Mar 2020:  Tidied up the directories/files.  Added Carbon syntax-highlighting examples (will not work with TWebBrowser).
