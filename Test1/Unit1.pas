@@ -42,9 +42,11 @@ end;
 procedure TForm1.FormCreate(Sender: TObject);
 begin
     wd := GetCurrentDir;
-    //wd := TDirectory.GetParent(wd);    //  Delphi / C++Builder IDE specific.  
-    //wd := TDirectory.GetParent(wd);    //  .exe is 2 directories down from the source files.
-    wd := FilePathToURL(wd)+'/';         //  Uncomment to run in IDE, or place html files with .exe 
+    wd := TDirectory.GetParent(wd);    //  Delphi / C++Builder IDE specific.
+    wd := TDirectory.GetParent(wd);    //  .exe  is 2 directories down from the source files.
+    wd := TDirectory.GetParent(wd);    //  Test1 is 1 directory   down from D3Delphi base dir.
+    wd := wd+'/d3samples/';            //
+    wd := FilePathToURL(wd);           //  Modify to run outside the IDE-related directory structure.
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
