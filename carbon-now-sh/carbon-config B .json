@@ -1,0 +1,49 @@
+{
+	"paddingVertical"         : "56px",
+	"paddingHorizontal"       : "56px",
+	"backgroundImage"         : null,
+	"backgroundImageSelection": null,
+	"backgroundMode"          : "color",
+	"backgroundColor"         : "rgba(30,118,194,1)",
+	"dropShadow"              : true,
+	"dropShadowOffsetY"       : "20px",
+	"dropShadowBlurRadius"    : "68px",
+	"theme"                   : "cobalt",
+	"windowTheme"             : "none",
+	"language"                : "text/x-c++src",
+	"fontFamily"              : "Hack",
+	"fontSize"                : "14px",
+	"lineHeight"              : "133%",
+	"windowControls"          : true,
+	"widthAdjustment"         : true,
+	"lineNumbers"             : true,
+	"firstLineNumber"         : 1,
+	"exportSize"              : "2x",
+	"watermark"               : false,
+	"squaredImage"            : false,
+	"hiddenCharacters"        : false,
+	"loading"                 : false,
+	"icon"                    : "/static/presets/4.png",
+	"isVisible"               : true
+}
+
+https://carbon.now.sh/embed?
+bg    =rgba(30%2C118%2C194%2C1)&
+t     =cobalt&
+wt    =none&
+l     =text%2Fx-c%2B%2Bsrc&
+ds    =true&
+dsyoff=20px&
+dsblur=68px&
+wc    =true&
+wa    =true&
+pv    =56px&
+ph    =56px&
+ln    =false&
+fl    =1&
+fm    =Hack&
+fs    =14px&
+lh    =133%25&
+si    =false&
+es    =2x&
+wm    =false&

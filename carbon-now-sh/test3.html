@@ -1,0 +1,10 @@
+<html>
+
+<iframe
+  src="https://carbon.now.sh/embed?bg=rgba(30%2C118%2C194%2C1)&t=night-owl&wt=none&l=pascal&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=implementation%250A%250Auses%250A%2520%2520IdHTTP%253B%250A%250Afunction%2520Curl(aURL%253A%2520string)%253A%2520string%253B%250Aconst%250A%2520%2520cUSER_AGENT%2520%253D%2520'Mozilla%252F4.0%2520(MSIE%25206.0%253B%2520Windows%2520NT%25205.1)'%253B%250Avar%250A%2520%2520IdHTTP%253A%2520TIdHTTP%253B%250A%2520%2520Stream%253A%2520TStringStream%253B%250Abegin%250A%2520%2520Result%2520%253A%253D%2520''%253B%250A%2520%2520IdHTTP%2520%253A%253D%2520TIdHTTP.Create(nil)%253B%250A%2520%2520Stream%2520%253A%253D%2520TStringStream.Create%253B%250A%2520%2520try%250A%2520%2520%2520%2520IdHTTP.Request.UserAgent%2520%253A%253D%2520cUSER_AGENT%253B%250A%2520%2520%2520%2520try%250A%2520%2520%2520%2520%2520%2520IdHTTP.Get(aURL%252C%2520Stream)%253B%250A%2520%2520%2520%2520%2520%2520Result%2520%253A%253D%2520Stream.DataString%253B%250A%2520%2520%2520%2520except%250A%2520%2520%2520%2520%2520%2520Result%2520%253A%253D%2520''%253B%250A%2520%2520%2520%2520end%253B%250A%2520%2520finally%250A%2520%2520%2520%2520Stream.Free%253B%250A%2520%2520%2520%2520IdHTTP.Free%253B%250A%2520%2520end%253B%250Aend%253B%250A"
+  style="transform:scale(1.0); width:1024px; height:900px; border:0; overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+
+</html>
