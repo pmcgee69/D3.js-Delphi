@@ -11,9 +11,9 @@
 
 ### Demonstration videos.
 
-- Demonstration 1: https://youtu.be/pPhYZ9wAvbE
+- Demonstration 1 : https://youtu.be/pPhYZ9wAvbE
 
-- Demonstration 2: https://youtu.be/TjKuMoU2kBg
+- Demonstration 2 : https://youtu.be/TjKuMoU2kBg
 
 
 ### Other Delphi browser projects.
@@ -32,11 +32,11 @@
 
 ### To-do list.
 
-- Looking into 'Gears' demos ... 
+- Looking into 'Gears' demos
 
-      Epicyclic gearing :     http://bl.ocks.org/mbostock/1353700/190ad80b4eb9c5e6daa7d4f210d263cbfb6db675
+  Epicyclic gearing :     http://bl.ocks.org/mbostock/1353700/190ad80b4eb9c5e6daa7d4f210d263cbfb6db675
       
-      Gear toy          :     https://brm.io/gears-d3-js/
+  Gear toy          :     https://brm.io/gears-d3-js/
       
 - Look at ScriptGate and other Delphi/js interfacing options.
 
