@@ -41,9 +41,12 @@
 - Look at ScriptGate and other Delphi/js interfacing options.
 
 - Check out Flourish
-  1. eg https://public.flourish.studio/visualisation/1712761
-  2. https://www.npmjs.com/package/@flourish/sdk
+  1.   eg https://public.flourish.studio/visualisation/1712761
+  2.   https://www.npmjs.com/package/@flourish/sdk
 
+- Theorem.js
+  1.   https://theorem.js.org/
+  2.   https://github.com/arguiot/TheoremJS
 
 ### Delphi/js interface links.
 - Embarcadero list of options : https://community.idera.com/developer-tools/b/blog/posts/six-easy-ways-to-embed-javascript-engines-in-your-delphi-10-2-tokyo-apps
