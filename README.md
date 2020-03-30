@@ -41,8 +41,9 @@
 - Look at ScriptGate and other Delphi/js interfacing options.
 
 - Check out Flourish
-  1.   eg https://public.flourish.studio/visualisation/1712761
+  1.   https://public.flourish.studio/visualisation/1712761
   2.   https://www.npmjs.com/package/@flourish/sdk
+  3.   https://flourish.studio/
 
 - Theorem.js
   1.   https://theorem.js.org/
