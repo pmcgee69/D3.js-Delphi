@@ -27,7 +27,7 @@
 
 - D3 Graph Gallery        :     https://www.d3-graph-gallery.com/index.html
 
-- Carbon syntax h/lighter :     https://carbon.now.sh/
+- Carbon syntax highlighter :     https://carbon.now.sh/
 
 
 ### To-do list.
