@@ -41,8 +41,8 @@
 - Look at ScriptGate and other Delphi/js interfacing options.
 
 - Check out Flourish
-  # eg https://public.flourish.studio/visualisation/1712761
-  # https://www.npmjs.com/package/@flourish/sdk
+  1. eg https://public.flourish.studio/visualisation/1712761
+  2. https://www.npmjs.com/package/@flourish/sdk
 
 
 ### Delphi/js interface links.
