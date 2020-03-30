@@ -40,6 +40,10 @@
       
 - Look at ScriptGate and other Delphi/js interfacing options.
 
+- Check out Flourish
+  # eg https://public.flourish.studio/visualisation/1712761
+  # https://www.npmjs.com/package/@flourish/sdk
+
 
 ### Delphi/js interface links.
 - Embarcadero list of options : https://community.idera.com/developer-tools/b/blog/posts/six-easy-ways-to-embed-javascript-engines-in-your-delphi-10-2-tokyo-apps
