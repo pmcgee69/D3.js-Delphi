@@ -27,7 +27,7 @@
 
 - D3 Graph Gallery        :     https://www.d3-graph-gallery.com/index.html
 
-- Carbon syntax h/lighter :     https://carbon.now.sh/
+- Carbon syntax highlighter :     https://carbon.now.sh/
 
 
 ### To-do list.
@@ -40,6 +40,14 @@
       
 - Look at ScriptGate and other Delphi/js interfacing options.
 
+- Check out Flourish
+  1.   https://public.flourish.studio/visualisation/1712761
+  2.   https://www.npmjs.com/package/@flourish/sdk
+  3.   https://flourish.studio/
+
+- Theorem.js
+  1.   https://theorem.js.org/
+  2.   https://github.com/arguiot/TheoremJS
 
 ### Delphi/js interface links.
 - Embarcadero list of options : https://community.idera.com/developer-tools/b/blog/posts/six-easy-ways-to-embed-javascript-engines-in-your-delphi-10-2-tokyo-apps
