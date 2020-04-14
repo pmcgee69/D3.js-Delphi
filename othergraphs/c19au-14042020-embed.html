@@ -1,0 +1,242 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <title>State and territory breakdowns of daily confirmed cases - Infogram</title>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jifo.co/js/dist/assets-embed_view_polyfills-1f11eacd68fa4125c7a4-1-webpack.js" class="app-bundle" crossorigin="anonymous"></script>
+    <![endif]-->
+    <script>
+        function browserIsIE() {
+            var userAgent = window.navigator.userAgent;
+            return 1 == 0
+        }
+
+        if (browserIsIE()) {
+            window.errorLog = [];
+            var newLocation = window.location.toString().split('#');
+            if (newLocation[0].indexOf('&retry=1') < 0) {
+                window.onunhandledrejection = function(event)  {
+                    if (event.reason && event.reason.indexOf && event.reason.indexOf('regeneratorRuntime') > -1) {
+                        console.log('embed known promise rejection');
+                        reload();
+                    }
+                };
+
+                window.onerror = function(msg, url, line, col, error) {
+                    window.errorLog.push({
+                        msg: msg, url: url, line: line, col: col, error: error
+                    });
+
+                    if (msg && (msg.indexOf('Out of memory') > -1 || msg.indexOf('regeneratorRuntime') > -1 || msg.indexOf('load stylesheet failed') > -1)) {
+                        console.log('embed known error reload');
+                        setTimeout(function() {
+                            reload();
+                        }, 0);
+                    }
+                };
+            }
+
+            function reload() {
+                newLocation[0] += '&retry=1';
+                window.location = newLocation.join('#');
+            }
+        }
+        window.loadingLog = [];
+    </script>
+    <link rel="dns-prefetch" href="https://cdn.jifo.co">
+<link rel="preconnect" href="https://cdn.jifo.co" />
+
+    <link rel="preload" href="/api/stylesheets/289" as="style">
+    <link rel="preload" as="script" href="https://cdn.jifo.co/js/dist/bundle_vendor-45812f3f22b0dc87ad33-1-webpack.js" crossorigin="anonymous"/>
+    <link rel="preload" as="script" href="https://cdn.jifo.co/js/dist/assets-embed_view-81d7ee5c5f7098d7b94a-1-webpack.js" crossorigin="anonymous"/>
+    <link rel="preload" as="script" href="https://cdn.jifo.co/js/dist/embed_viewer-a9e2491d37c19536df37-1-webpack.js" crossorigin="anonymous"/>
+    <link rel="stylesheet"href="https://cdn.jifo.co/css/dist/embed_view-f3b002bc511a2d52e4e9dcfa6b176645e54e423b.css" media="all">
+    <link rel="icon" href="https://cdn.jifo.co/favicon/favicon.ico?v=2" type="image/x-icon">
+    <link rel="canonical" href="https://infogram.com/1pqmx1jnwn2m1ruq7eqpwrqjx2f61r9n2q">
+<style></style>
+
+    
+    <script async src="https://s.infogram.com/t.js?v3" data-infogram-track-id="1pqmx1jnwn2m1ruq7eqpwrqjx2f61r9n2q" data-tag="embed"
+            data-track-url="https://s.infogram.com/t2"></script>
+    
+
+    
+        
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+j.onerror=function(){window.ga = window.ga || function(){}}
+})(window,document,'script','dataLayer','GTM-5MG85WM');</script>
+
+    
+</head>
+<body data-window-graphicID="06999528-9da7-48d6-b95b-9790b5e5669d" data-window-stylesheet="289" data-window-ts="NaN"
+      data-window-__viewMode="embed" data-fonts="" data-fullscreen="off" data-aside="on"
+      data-user-status="anonymous" data-password-protected="false"
+      data-user-id="false" >
+<div id="dialog-container"></div>
+<div id="middle">
+    <div id="embed-loader" style="text-align:center; position: relative; min-width: 130px; min-height: 130px"></div>
+    <script>
+        window.parent.postMessage('frameStart', '*');
+        var initDelayedScripts;
+        var initDelayedScriptsWhenReady = false;
+        var serviceWorkerEnabled = true;
+        window.publicViewConfig = {"cdn":"https:\u002F\u002Fcdn.jifo.co","mapCDN":"https:\u002F\u002Fmaps.jifo.co","infogramMapCDN":"https:\u002F\u002Fmaps.jifo.co\u002Finfogram","assetsCDN":""};
+
+        function readyForInitialisation() {
+            if (initDelayedScripts) {
+                initDelayedScripts();
+            } else {
+                initDelayedScriptsWhenReady = true;
+            }
+        }
+
+        if ('serviceWorker' in navigator && serviceWorkerEnabled) {
+            //
+            if (!navigator.serviceWorker.controller) {
+                navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                        // Registration was successful
+                        var worker = registration.active || registration.waiting || registration.installing;
+                        if (worker.state === 'activated') {
+                            readyForInitialisation();
+                        } else {
+                            worker.addEventListener('statechange', function(e) {
+                                if (e.target.state === 'activated') {
+                                    readyForInitialisation();
+                                }
+                            });
+                        }
+                    },
+
+                    function(err) {
+                        // registration failed :(
+                        readyForInitialisation();
+                    }
+                );
+            }
+        }
+
+        // Test for animation support
+        var animationPrefix = function() {
+            var domPrefixes = 'Webkit Moz O ms Khtml'.split(' ');
+            var prefix = null;
+            var elm = document.createElement('div');
+
+            if (elm.style.animationName !== undefined) {
+                prefix = '';
+            }
+
+            if (prefix === null) {
+                for (var i = 0; i < domPrefixes.length; i++) {
+                    if (elm.style[domPrefixes[i] + 'AnimationName'] !== undefined) {
+                        prefix = '-' + domPrefixes[i].toLowerCase() + '-';
+                        break;
+                    }
+                }
+            }
+
+            return prefix;
+        };
+
+        var loader;
+        var prefix = animationPrefix();
+
+        // If prefix is null, there is no support for CSS animation, fallback to GIF animation
+        if (prefix === null) {
+            var image = 'preloder.gif';
+            if ('devicePixelRatio' in window && window.devicePixelRatio >= 2) {
+                image = 'preloder@x2.gif';
+            }
+
+            loader = document.createElement('IMG');
+            loader.setAttribute('alt', 'Loading infographic');
+            loader.setAttribute('style', 'width:100%;max-width:75px !important;height:auto;margin:0 auto;' +
+                'border:solid #e3e3e3 1px;border-radius: 5px;margin:25px 0px;padding:10px;' +
+                'background-color:#fff;box-sizing:border-box;');
+
+            loader.setAttribute('src', 'https://cdn.jifo.co/i/embed/' + image);
+        } else {
+
+            // Append style to head element if needed
+            var loaderStyle = document.createElement('STYLE');
+            loaderStyle.type = 'text/css';
+
+            var styles = '@' + prefix + 'keyframes infogram-loader { 100% { ' + prefix + 'transform: rotate(360deg); } }';
+
+            if (loaderStyle.styleSheet) {
+                loaderStyle.styleSheet.cssText = styles;
+            } else {
+                loaderStyle.appendChild(document.createTextNode(styles));
+            }
+
+            document.getElementsByTagName("head")[0].appendChild(loaderStyle);
+
+            // Create loader element itself
+            var circle = document.createElement('I');
+            circle.setAttribute('style', 'display: block; width: 40px; height: 40px; margin: -25px; padding: 0; ' +
+                'position: absolute; top: 50%; left: 50%; border: 5px solid; border-top-color: transparent; ' +
+                'border-left-color: transparent; border-radius: 50%; color: #A6A6A6; background-color: transparent; ' +
+                prefix + 'animation: infogram-loader 0.9s linear infinite;');
+
+            loader = document.createElement('DIV');
+            loader.setAttribute('style', 'line-height: 40px; width: 130px; height: 130px; top: 50%; left: 50%; ' +
+                'margin: -65px -65px; display: block; position: absolute;');
+
+            loader.appendChild(circle);
+        }
+
+        var container = document.getElementById('embed-loader');
+        container && container.appendChild(loader);
+    </script>
+</div>
+<script>window.infographicData={"id":150736083,"type":0,"block_id":"06999528-9da7-48d6-b95b-9790b5e5669d","theme_id":289,"user_id":57457391,"team_user_id":6761376,"path":"f3e589cc-2dd3-4b09-a381-cd474f83496d","title":"State and territory breakdowns of daily confirmed cases","description":"","tags":"","public":false,"publicAccess":false,"private_link_enabled":1,"thumb":"https:\u002F\u002Finfogram-thumbs-200.s3-eu-west-1.amazonaws.com\u002F06999528-9da7-48d6-b95b-9790b5e5669d.jpg","embedImageUrl":"https:\u002F\u002Finfogram.io\u002Fp\u002Fd12bda12104eccdc969ff932e37de34b.png","previewImageUrl":"https:\u002F\u002Finfogram.io\u002Fp\u002F094e1240de744101d67e3df622ef1d5d.png","width":550,"copyright":"","properties":{"tabs":true,"zeropaddingembed":true,"temporaryPath":true,"title_link":"infogram","customLinkOption":"text","footerSettings":{},"cspsources":"","interactivity_hint":true,"publishType":1,"transparent":false,"rtl":false,"language":"en","export_settings":{"showGrid":true,"showValues":true},"whitelabel":true,"noTracking":false,"decimal_separator":".,","embed_button":"enabled","custom_logo":"none","custom_link_url":"","logoName":"Infogram logo","showChartsOnScroll":true,"pro":true},"elements":[{"type":"particle","particle_id":423554073,"object_id":"5844c7d7-43d3-4553-af90-06054a4730f5","particle_type":"maintitle","picture":null,"accessibility":{"enabled":true},"text":"\u003Cfont style=\"font-size: 24px\"\u003EState and territory breakdowns of daily confirmed cases\u003C\u002Ffont\u003E","content_type":"text\u002Fhtml","title":"","shrink":null},{"type":"chart","chart_id":365471073,"object_id":"d34321e0-67ec-411e-aa3f-fa2ccfa48922","chart_type_nr":10,"data":[[["Date","NSW","VIC","QLD","SA","WA","TAS","NT","ACT"],["08\u002F03","4","1","1","0","1","0","0","0"],["09\u002F03","7","3","0","0","2","0","0","0"],["10\u002F03","14","3","3","0","0","0","0","0"],["11\u002F03","4","3","2","2","3","1","0","0"],["12\u002F03","13","6","7","3","0","0","0","1"],["13\u002F03","14","9","8","4","5","1","0","0"],["14\u002F03","20","13","11","3","3","1","0","0"],["15\u002F03","22","8","15","1","1","1","0","0"],["16\u002F03","37","14","7","9","10","1","0","1"],["17\u002F03","39","23","10","3","3","0","0","0"],["18\u002F03","57","27","16","5","4","3","0","1"],["19\u002F03","40","29","50","5","17","0","0","1"],["20\u002F03","46","28","40","8","12","0","2","2"],["21\u002F03","83","51","37","17","26","6","2","3"],["22\u002F03","97","67","38","33","30","5","0","10"],["23\u002F03","136","59","60","34","20","6","0","13"],["24\u002F03","149","56","78","36","35","8","1","7"],["25\u002F03","211","55","46","27","30","6","0","5"],["26\u002F03","190","54","50","38","26","5","7","9"],["27\u002F03","186","54","62","22","24","12","2","9"],["28\u002F03","212","111","70","30","23","4","1","9"],["29\u002F03","174","84","31","12","33","4","0","6"],["30\u002F03","127","52","33","6","44","3","0","1"],["31\u002F03","114","96","54","32","9","0","4","2"],["01\u002F04","150","51","38","30","28","2","0","4"],["02\u002F04","116","68","54","18","8","3","3","3"],["03\u002F04","91","49","38","11","22","6","4","4"],["04\u002F04","104","30","27","11","14","2","0","2"],["05\u002F04","87","20","7","2","17","4","1","3"],["06\u002F04","57","23","14","2","7","3","1","0"],["07\u002F04","49","33","13","4","10","9","0","1"],["08\u002F04","48","21","9","5","11","9","0","2"],["09\u002F04","39","16","10","1","14","4","0","1"],["10\u002F04","40","13","12","7","11","11","0","3"],["11\u002F04","44","24","9","1","8","11","0","0"],["12\u002F04","7","3","12","0","3","11","0","0"],["13\u002F04","9","13","7","2","6","6","0","1"],["14\u002F04","7","10","11","2","4","15","0","0"]]],"custom":{"showPoints":true,"absoluteDistribution":true,"categoryLayout":"regular","decimalSeparator":".","groupingSymbol":"none","live":{"provider":"atlas_google_drive","title":"","url":"https:\u002F\u002Fatlas.jifo.co\u002Fapi\u002Fconnectors\u002F347ebc2c-f43f-4dea-a3d7-84184caa7e7b","key":"347ebc2c-f43f-4dea-a3d7-84184caa7e7b","refresh":30000,"refreshed":1586353265576,"updated":0,"enabled":1,"sheetNames":["timestamp","cases_master","deaths_master","cases_daily_aus","cases_daily_aus_1monthview","cases_cumulative_aus","cases_cumulative_aus_1month","cases_daily_state","cases_daily_state_1monthview","cases_cumulative_state","cases_cumulative_state_1monthvi","deaths_daily_aus","deaths_daily_aus_1month","deaths_cumulative_aus","deaths_cumulative_aus_1month","deaths_daily_state","deaths_daily_state_1month","deaths_cumulative_state","deaths_cumulative_state_1month","state_totals_table","state_totals_map","healthstatus_total","deaths cumulative","recoveries_timeline"],"sheetSelected":8,"fileId":"","providerProperties":{},"chartId":365471073},"axis":{"x":{"grid":false,"affix":true},"y":{"grid":false,"affix":true},"alpha":0.2},"labels":{"graph":{"item":{"format":{"affix":true},"value":{"font-size":"11px"}}},"tooltip":{"format":{"y":{"affix":true},"x":{"affix":true}}},"sheetSwitch":{"tab":{"font-size":"11px"}},"axis":{"x":{"tick":{"font-size":"11px"},"title":{"font-size":"12px"}},"y":{"tick":{"font-size":"11px"},"title":{"font-size":"12px"}}},"legend":{"font-size":"11px"}},"smooth":true,"showDownload":false,"showLabels":true,"pointStrokeColor":"#8ec3a7","graphs":{"line":{"style":[{"strokeWidth":8,"strokeStyle":"solid"}]}},"showValues":true,"singleColor":{"enabled":false},"categoryWidthAuto":true,"useAllColumns":true,"height":346,"showInLineValues":true,"showInLineValuesOutside":true,"categoryWidth":40,"enableHeight":true,"containsJSON":false},"colors":[],"defaultColors":["#4d4d4d","#60a6d9","#f9a446","#64bd6c","#f07fb0","#b278b1"],"defaultColorsHeatmap":[],"dimensions":[],"modifier":0,"sheetnames":["cases_daily_state_1monthview"],"sheets_settings":[{"graphs":{"line":{"style":[{"strokeWidth":3,"strokeStyle":"solid"}]}},"colors":["#4d4d4d","#60a6d9","#f9a446","#64bd6c","#f07fb0","#b278b1","#D54300","#999999"]}],"accessibility":{"enabled":true,"label":"Chart","description":""}},{"type":"particle","particle_id":423554103,"object_id":"c022f3ae-a621-43a9-a1ba-80321e610c8b","particle_type":"captiontext","picture":null,"accessibility":{"enabled":true},"text":"\u003Cp\u003E\u003C\u002Fp\u003E\u003Cp\u003E\u003C\u002Fp\u003E\u003Cp\u003E\u003C\u002Fp\u003E\u003Cp\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Cspan style=\"font-family:ubuntu;font-size: 13px;font-style: normal;font-weight: 500;text-align: start\"\u003E* On 20 March 2020, NSW brought its reporting time forward, creating a lower than usual figure for that day\u003C\u002Fspan\u003E\u003Cbr\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003Cp\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Cspan style=\"font-family:ubuntu;font-size: 13px;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003Cspan style=\"font-family:ubuntu;font-size: 12.6667px;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003C\u002Fspan\u003E\u003Cspan style=\"font-family:ubuntu;font-weight: 500;font-style: normal;text-align: start;font-size: 12.6667px\"\u003E\u003C\u002Fspan\u003E\u003Cspan style=\"font-family:ubuntu;font-weight: 500;font-style: normal;text-align: start;font-size: 12.6667px\"\u003E* On 12 April 2020,\u003Cspan\u003E&nbsp;\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003Cspan style=\"font-family:ubuntu;font-weight: 500;font-style: normal;font-size: 12.8px;text-align: left\"\u003Ethe number of new cases in NSW increased by 7, but its total was revised down by 10 to&nbsp;\u003C\u002Fspan\u003E\u003Cspan style=\"font-family:ubuntu;font-weight: 500;font-style: normal;text-align: start;font-size: 12.6667px\"\u003Eaccount for&nbsp;\u003C\u002Fspan\u003E\u003Cspan style=\"font-family:ubuntu;font-weight: 500;font-style: normal;text-align: start;font-size: 12.6667px\"\u003E9 interstate residents and 1 false positive\u003C\u002Fspan\u003E\u003Cp\u003E\u003Cfont face=\"ubuntu\"\u003E\u003Cspan style=\"font-size: 12.6667px\"\u003E* On 12 April 2020, \u003Cspan style=\"font-family:ubuntu;font-size: 12.6667px;font-style: normal;font-weight: 500;text-align: start\"\u003EACT's\u003C\u002Fspan\u003E total number of confirmed cases was reduced by 1, as there were no new cases that day and a previous case was removed\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003Cbr style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003C\u002Fp\u003E\u003Cp\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Cfont style=\"font-size: 13px\"\u003E*&nbsp;\u003C\u002Ffont\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003Cfont face=\"ubuntu\"\u003ETo view this chart since the first case in Australia, click \u003Ca href=\"https:\u002F\u002Finfogram.com\u002F1p0lp9vmnqd3n9te63x3q090ketnx57evn5?live\" rel=\"nofollow noopener noreferrer\" target=\"_blank\"\u003Ehere\u003C\u002Fa\u003E\u003C\u002Ffont\u003E\u003C\u002Fp\u003E\u003Cp\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Cbr\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003Cp style=\"text-align: right\"\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Cspan style=\"font-family: ubuntu;font-style: normal;font-weight: 500;text-align: start\"\u003E\u003Ca href=\"https:\u002F\u002Fwww.covid19data.com.au\u002F\" rel=\"nofollow noopener noreferrer\" target=\"_blank\" style=\"font-family:ubuntu;font-weight: 500;font-size: 13px;font-style: normal;text-align: start\"\u003Ewww.covid19data.com.au\u003C\u002Fa\u003E\u003Cbr\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003Cp\u003E\u003C\u002Fp\u003E\u003Cp\u003E\u003C\u002Fp\u003E","content_type":"text\u002Fhtml","title":"","shrink":null},{"type":"chart","chart_id":387969401,"object_id":"31632576-5bc4-4b6b-8e31-2ff063bc0f97","chart_type_nr":19,"data":[[["Last updated:","14 April 2020","20:40"]]],"custom":{"verticalHeader":false,"styleName":false,"dynamicWidth":true,"A1cell":true,"searchFirstRow":true,"decimalSeparator":".","groupingSymbol":"none","live":{"provider":"atlas_google_drive","title":"","url":"https:\u002F\u002Fatlas.jifo.co\u002Fapi\u002Fconnectors\u002F545ffefc-80f4-44ae-90dc-59a143cc7c17","key":"545ffefc-80f4-44ae-90dc-59a143cc7c17","refresh":30000,"refreshed":1585721147767,"updated":0,"enabled":1,"sheetNames":["timestamp","cases_master","deaths_master","cases_daily_aus","cases_daily_aus_1monthview","cases_cumulative_aus","cases_daily_state","cases_daily_state_1monthview","cases_cumulative_state","cases_cumulative_state_1monthvi","deaths_daily_aus","deaths_cumulative_aus","deaths_daily_state","deaths_cumulative_state","state_totals_table","state_totals_map","deaths_total"],"sheetSelected":0,"fileId":"","providerProperties":{},"chartId":387969401}},"colors":["#8ec3a7","#333","#666","#FFFFFF","#fff","#333","#eee","#333","#E5E5E5"],"defaultColors":["#333","#eee","#333","#eee","#666","#fff","#333","#eee","#8ec3a7"],"defaultColorsHeatmap":[],"dimensions":[],"modifier":0,"sheetnames":["timestamp"],"sheets_settings":[],"accessibility":{"enabled":true,"label":"Chart","description":""}}],"publishedURLId":"1pqmx1jnwn2m1ruq7eqpwrqjx2f61r9n2q","updatedAt":"2020-04-13T01:51:01.000Z","embed_image_data":{"height":856},"privateURL":"fGmCiqWT8M0AgX4fJOZd","theme":{"createdAt":"2016-04-22T04:54:12.000Z","updatedAt":"2019-06-26T08:06:53.000Z","title":"Cape Town","usergroup":"pro","picture":"https:\u002F\u002Fd1m5pq7b4fzvad.cloudfront.net\u002Fthumbnails\u002F0018_PRO-mild.png","order":19,"public":0,"width":550,"fonts":"Ubuntu:400,500,700","colors":["#4d4d4d","#60a6d9","#f9a446","#64bd6c","#f07fb0","#b278b1"],"logocolor":"d7d7d7","logoImages":["https:\u002F\u002Fd1m5pq7b4fzvad.cloudfront.net\u002F289\u002F289.svg"],"logoUrl":"","showLogo":"","showEmbed":"","embedButtonText":"","top":0,"padding":30,"spacing":30,"shrinkMargin":30,"shrinkPadding":0,"spacingElementMin":null,"spacingElementMax":null,"css":"svg .igc-pie-center-text .igc-pie-center-text-node {\n\tfont-family: Ubuntu;\n\tfont-weight: 500;\n\tfill: #434343;\n\tfont-size: 19px;\n}\n.igc-sheet {\n\tmargin-bottom: 15px;\n}\n.igc-sheets {\n\tmargin-bottom: 15px;\n}\n.igc-sheets .igc-sheet .igc-sheet-label,\n    .igc-sheets .igc-sheet:hover .igc-sheet-label,\n        .igc-sheets .igc-sheet.active .igc-sheet-label {\n\tcolor: rgba(70, 70, 70, 1);\n\tmargin-left: 5px;\n\tfont: 500 13px Ubuntu !important;\n}\n.igc-sheets .igc-sheet:hover .igc-sheet-label,.igc-sheets .igc-sheet.active .igc-sheet-label {\n\tcolor: rgba(70, 70, 70, 0.7);\n}\n.igc-sheets .igc-sheet .igc-sheet-ico,\n    .igc-sheets .igc-sheet:hover .igc-sheet-ico {\n\tbackground: rgba(167, 167, 167, 0.3);\n\tborder-color: #434343;\n\ttransition: .2s;\n}\n.igc-sheets .igc-sheet:hover .igc-sheet-ico {\n\tbackground: rgba(167, 167, 167, 1);\n}\n.igc-sheets .igc-sheet.active .igc-sheet-ico {\n\tbackground: #434343;\n}\n.igc-sheets .igc-sheet.active .igc-sheet-ico::after,\n    .igc-sheets .igc-sheet:hover .igc-sheet-ico::after {\n\theight: 6px;\n\twidth: 6px;\n\tleft: 6px;\n\ttop: 6px;\n\tbackground: #fff;\n}\n.igc-textual-figure {\n\tfont: 500 29px Ubuntu;\n}\n.igc-textual-fact {\n\tcolor: #434343;\n\tline-height: 18px;\n\tfont: 500 15px Ubuntu;\n}\n.igc-textual-icon {\n\tpadding-right: 30px;\n\tpadding-top: 7px;\n}\n.igc-table .igc-table-cell {\n\tfont: 500 13px Ubuntu;\n}\n.igc-table .igc-table-header {\n\tfont: 500 13px Ubuntu;\n\tpadding-left: 9px;\n}\n.ig-container {\n\tbackground: #fff;\n}\n.headline {\n\tfont: 500 39px Ubuntu;\n\tcolor: #434343;\n\ttext-align: left;\n\tline-height: 40px;\n\tborder-bottom: 5px solid #e8e8e8;\n\tpadding-bottom: 10px;\n}\n.chart-title {\n\tfont: 500 29px Ubuntu;\n\tcolor: #434343;\n\ttext-align: left;\n\tline-height: 35px;\n}\n.bodytext {\n\tfont: 500 normal 15px Ubuntu;\n\ttext-align: left;\n\ttext-align: justify;\n\tcolor: #434343;\n\tline-height: 25px;\n}\n.quote {\n\tfont: 500 29px Ubuntu;\n\tcolor: #434343;\n\tline-height: 35px;\n\ttext-align: left;\n\tbackground: url(https:\u002F\u002Fd1m5pq7b4fzvad.cloudfront.net\u002F289\u002Fquote.svg) left top no-repeat;\n\tbackground-size: 50px;\n\tpadding-left: 80px;\n\tmin-height: 50px;\n}\n.shrink .quote {\n\tpadding-top: 50px;\n\tpadding-left: 0;\n}\n.quotetitle {\n\tfont: 500 italic 15px Ubuntu;\n\tcolor: #434343;\n\tmargin-top: 5px;\n\tline-height: 25px;\n}\n.tt_tooltip {\n\tcolor: #4d4d4d;\n\tfont: 500 normal 13px Ubuntu;\n}\n.igc-legend-entry {\n\tmargin-top: 15px;\n}\n.igc-legend {\n\tpadding-top: 10px;\n\tpadding-bottom: 0;\n}\n.igc-x-axis-separator {\n\ty2: 30 !important;\n}\n.footer-bottom {\n\tpadding-top: 15px;\n\toverflow: hidden;\n\tmargin-bottom: 15px;\n}\n.ig-share-button {\n\tmargin-bottom: 11px;\n}\n.ig-logo {\n\tmargin-top: 0px;\n}\n.ig-separator-line {\n\tbackground: rgba(67, 67, 67, 0.5);\n}\n.heatmap-legend {\n\tbackground: rgba(255, 255, 255, 0.7);\n}\n.heatmap-legend-item,\n.heatmap-label {\n\tcolor: #434343;\n\tfont-size: 13px;\n\tfont-weight: 500;\n\tfont-family: Ubuntu;\n}\n.igc-graph-pie-piece {\n\tstroke: rgba(255, 255, 255, 0.7);\n}\n.tt_tooltip .tt_value {\n\tfont-weight: 500;\n}\n.tt_tooltip .tt_body {\n\tbackground: #d7d7d7;\n}\n.tt_tooltip .tt_left {\n\tborder-right: 8px solid #d7d7d7;\n}\n.tt_tooltip .tt_right {\n\tborder-left: 8px solid #d7d7d7;\n}\n.igc-tabs .igc-tab-active {\n\tbackground: #fff;\n}\n.igc-tabs .igc-tab .igc-tab-content,\n          .igc-tabs .igc-tab.icon-down:after {\n\tfont-family: Ubuntu;\n\tcolor: #434343;\n\tfont-weight: 500;\n}\n.igc-tabs .igc-tab,\n          .igc-tab-switcher {\n\tcolor: #434343;\n}\n.igc-tabs.igc-tabs-dropdown .igc-tab-name {\n\tfont-family: Ubuntu;\n\tcolor: #434343;\n}\n.captiontext {\n\tfont-family: Ubuntu;\n\tcolor: #434343;\n\tfont-weight: 500;\n}\n.captiontext .innertext {\n\tline-height: 1.5;\n}\n.igc-tab-ico svg path {\n\tfill: #434343;\n}\n.igc-tab-switcher-ico svg path {\n\tfill: #434343;\n}\n.igc-table-search {\n\tcolor: #666;\n\tfont-size: 13px;\n\tfont-weight: 500;\n\tfont-family: Ubuntu;\n}\n","charts":{"treemap":{"labels":{"value":{"fontFamily":"Ubuntu"},"name":{"fontWeight":"500","fontFamily":"Ubuntu"}}},"wordcloud":{"labels":{"fontFamily":"Ubuntu","fontWeight":"500"}},"table":{"cellBackground":"#fff","headerBackground":"#eee","cellColor":"#666","headerColor":"#333","shapeFill":"8ec3a7"},"legend":{"color":{"label":{"active":"rgb(70, 70, 70)","hover":"rgba(70, 70, 70, 0.7)","inactive":"rgb(70, 70, 70)"},"icon":{"inactive":"rgba(67, 67, 67, 0.2)"}},"layouts":{"bottom":{"legend":{"entry":{"marginTop":"15px"},"marginTop":"10px","marginBottom":"0"}}}},"sheetSwitch":{"style":{"tab":{"font-family":"Ubuntu","font-weight":500,"font-style":"normal","colors":{"dropdown":{"selectIcon":"#434343","leftSwitcherIcon":"#434343","rightSwitcherIcon":"#434343"}},"font-size":"13px","color":"#434343"}}},"gauge":{"colors":{"background":"#e8e8e8"}},"waterfall":{"colors":"f0cb69 8ec3a7 dc5356"},"candle":{"colors":{"up":"#dc5356","down":"#8ec3a7"}},"barRadial":{"colors":{"background":"#e8e8e8"}},"pictorialBar":{"style":{"graph":{"item":{"value":{"font-family":"Ubuntu","font-size":"39px","font-weight":500}}}},"colors":{"background":"#e8e8e8"}},"barProgress":{"colors":{"background":"#e8e8e8"}},"map":{"countryFill":"#e8e8e8","hotColor":"#4d4d4d","coldColor":"#f9f9f9"}},"chartOptions":{"bar":{"axesTitleStyle":{"labelFontStyle":{"font-family":"Ubuntu","font-size":13,"fill":"#434343","font-weight":500}}},"gauge":{"gaugeFillStyle":{"stroke-width":0},"gaugeStyle":{"fill":"#e8e8e8"},"_gaugeTextOptions":{"labelFontStyle":{"font-family":"Ubuntu","font-size":13,"fill":"#434343","font-weight":500}}},"treemap":{"_gridTextOptions":{"labelFontStyle":{"font-family":"Ubuntu","font-weight":"500"}},"_gridTextOptionsInLine":{"labelFontStyle":{"font-family":"Ubuntu"}}},"datetime":{"fontStyle":{"font-family":"Ubuntu","font-weight":500,"font-size":29},"dotStyle":{"fill":"#4d4d4d"},"fontStyleText":{"font-family":"Ubuntu","font-weight":500,"font-size":15,"fill":"#434343"}},"textual":{},"customTypes":{},"wordcloud":{"fontStyle":{"font-family":"Ubuntu","font-weight":"500"}},"hierarchy":{"cellTextWrapperOptions":{"text":{"labelFontStyle":{"font-family":"Ubuntu","font-weight":"500"}}}},"pictobar":{"shapeStyleEmpty":{"fill":"#e8e8e8"},"cellTextWrapperOptions":{"text":{"labelFontStyle":{"font-family":"Ubuntu","font-weight":500,"font-size":39,"fill":"#434343"}}}},"line":{"showPoints":true,"circleStyle":{"fill":"#fff"}},"area":{"showPoints":true,"circleStyle":{"fill":"#fff"}},"bubble":{},"progress":{"backgroundInactive":{"fill":"#e8e8e8"}},"map":{"countryStroke":"#e8e8e8","countryFill":"#e8e8e8","hotColor":"#4d4d4d","coldColor":"#f9f9f9"},"candle":{"colors":"8ec3a7 dc5356 f0cb69"},"waterfall":{"colors":"f0cb69 8ec3a7 dc5356"},"common":{"_buttonWrapperOptions":{"marginY":6},"panelMarginY":8,"_categoryOptions":{"backgroundStyle":{"fill":"transparent"},"text":{"labelFontStyle":{"font-family":"Ubuntu","font-weight":500,"font-size":13}}},"inTextStyle":{"font-family":"Ubuntu","font-weight":500},"axesTitleStyle":{"labelFontStyle":{"font-family":"Ubuntu","fill":"#434343","font-weight":500,"font-size":13}},"legendOptions":{},"_gridOptions":{"lineStyle":{"stroke":"#7e7e7e","stroke-dasharray":"","stroke-opacity":0.5},"baseLineStyle":{"stroke-width":1,"stroke":"#7e7e7e","stroke-dasharray":"","stroke-opacity":0.5},"marginLineStyle":{"stroke-width":1,"stroke":"#7e7e7e","stroke-dasharray":"","stroke-opacity":0.5},"fontStyle":{"font-family":"Ubuntu","fill":"#434343","font-weight":500,"font-size":13}}}},"chartDefaults":{},"color":{"bg":"#fff","text":"#434343","chart":{"bg":"transparent","text":"#434343"},"element":{"bg":"transparent","text":"#434343"}},"colorPresets":[],"localFonts":{"google":[{"fontFamily":"Ubuntu","fontWeights":[400,500,700]}],"local":[],"typekit":[]},"font":{"common":{"fontFamily":"Ubuntu","fontWeight":"500","fontStyle":"normal","fontSize":"13","textAlign":"initial"},"legend":{"fontSize":"13","fontWeight":"500","fontFamily":"Ubuntu"},"label":{"fontSize":13,"fontWeight":500}},"fontPresets":[],"fontFamilies":["Ubuntu"],"footerOptions":{"common":{"borderColor":"#dadada","borderWidth":1},"copyrightNotice":{"enabled":false,"fontFamily":"PT Sans Narrow","fontSize":14,"color":"#4b4b4b","fontWeight":400,"fontStyle":"normal"},"shareButton":{"enabled":true,"background":"#d7d7d7","text":"Share","color":"#4d4d4d","fontFamily":"Roboto, Arial, sans-serif","fontSize":13,"fontWeight":400,"fontStyle":"normal","position":"left"},"logo":{"position":"right","enabled":true,"background":"#d7d7d7"}},"archived":false,"tabs":true,"zeroPaddingEmbed":true,"freelayoutContents":{"defaults":{"foregroundColor":"#434343","backgroundColor":"#fff","fontFamily":"Ubuntu","fontSize":12,"lineHeight":1.5,"textAlign":"ALIGN_LEFT"},"fontFamilies":{"font1":"Roboto"},"fontSizes":{"extraLarge":64,"large":48,"medium":18,"small":12},"elements":{"TEXT":{"h1":{"fontSize":"39px","fontFamily":"Ubuntu"},"h2":{"fontSize":"29px","fontFamily":"Ubuntu"},"body":{"fontSize":"15px","fontFamily":"Ubuntu"},"caption":{"fontSize":"13px","fontFamily":"Ubuntu"}},"SHAPE":{"fillColor":"#4d4d4d","strokeColor":"#4d4d4d"},"IMAGE":{"fillColor":"#4d4d4d"}},"colors":["#4d4d4d","#60a6d9","#f9a446","#64bd6c","#f07fb0","#b278b1"]},"id":289,"thumb":"https:\u002F\u002Fs3.amazonaws.com\u002Finfogram-themes\u002F289\u002Fsmall.jpg","version":1,"parentId":0,"enabledResponsive":true,"enabledFreeLayout":true,"created_at":"2016-04-22T04:54:12.000Z","updated_at":"2019-06-26T08:06:53.000Z"},"embed":"\u003Cscript id=\"infogram_0__\u002FfGmCiqWT8M0AgX4fJOZd\" title=\"State and territory breakdowns of daily confirmed cases\" src=\"https:\u002F\u002Fe.infogram.com\u002Fjs\u002Fdist\u002Fembed.js?wkA\" type=\"text\u002Fjavascript\"\u003E\u003C\u002Fscript\u003E","embedIframe":"\u003Ciframe src=\"https:\u002F\u002Fe.infogram.com\u002F_\u002FfGmCiqWT8M0AgX4fJOZd?src=embed\" title=\"State and territory breakdowns of daily confirmed cases\" width=\"550\" height=\"856\" scrolling=\"no\" frameborder=\"0\" style=\"border:none;\" allowfullscreen=\"allowfullscreen\"\u003E\u003C\u002Fiframe\u003E","embedImageResponsive":"\u003Cscript id=\"infogramimg_0__\u002FfGmCiqWT8M0AgX4fJOZd\" title=\"State and territory breakdowns of daily confirmed cases\" src=\"https:\u002F\u002Fe.infogram.com\u002Fjs\u002Fdist\u002Fembed.js?Iz9\" type=\"text\u002Fjavascript\"\u003E\u003C\u002Fscript\u003E","embedImageIframe":"","embedAMP":"\u003Camp-iframe width=\"550\" height=\"856\" layout=\"responsive\" sandbox=\"allow-scripts allow-same-origin allow-popups\" resizable allowfullscreen frameborder=\"0\" src=\"https:\u002F\u002Fe.infogram.com\u002F_\u002FfGmCiqWT8M0AgX4fJOZd?src=embed\"\u003E\u003Cdiv style=\"visibility: hidden\" overflow tabindex=0 role=button aria-label=\"Loading...\" placeholder\u003ELoading...\u003C\u002Fdiv\u003E\u003C\u002Famp-iframe\u003E","embedAMPImage":"\u003Camp-iframe width=\"550\" height=\"856\" layout=\"responsive\" sandbox=\"allow-scripts allow-same-origin allow-popups\" resizable allowfullscreen frameborder=\"0\" src=\"https:\u002F\u002Fe.infogram.com\u002F_\u002FfGmCiqWT8M0AgX4fJOZd?src=embed\"\u003E\u003Cdiv style=\"visibility: hidden\" overflow tabindex=0 role=button aria-label=\"Loading...\" placeholder\u003ELoading...\u003C\u002Fdiv\u003E\u003C\u002Famp-iframe\u003E","embedWordpress":"[infogram id=\"_\u002FfGmCiqWT8M0AgX4fJOZd\" prefix=\"3G8\" format=\"interactive\" title=\"State and territory breakdowns of daily confirmed cases\"]","embedWordpressImage":"[infogram id=\"_\u002FfGmCiqWT8M0AgX4fJOZd\" prefix=\"tui\" format=\"image\" title=\"State and territory breakdowns of daily confirmed cases\"]","embedAsync":"\u003Cdiv class=\"infogram-embed\" data-id=\"_\u002FfGmCiqWT8M0AgX4fJOZd\" data-type=\"interactive\" data-title=\"State and territory breakdowns of daily confirmed cases\"\u003E\u003C\u002Fdiv\u003E\u003Cscript\u003E!function(e,i,n,s){var t=\"InfogramEmbeds\",d=e.getElementsByTagName(\"script\")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement(\"script\");o.async=1,o.id=n,o.src=\"https:\u002F\u002Fe.infogram.com\u002Fjs\u002Fdist\u002Fembed-loader-min.js\",d.parentNode.insertBefore(o,d)}}(document,0,\"infogram-async\");\u003C\u002Fscript\u003E","embedImageAsync":"\u003Cdiv class=\"infogram-embed\" data-id=\"_\u002FfGmCiqWT8M0AgX4fJOZd\" data-type=\"image\" data-title=\"State and territory breakdowns of daily confirmed cases\"\u003E\u003C\u002Fdiv\u003E\u003Cscript\u003E!function(e,i,n,s){var t=\"InfogramEmbeds\",d=e.getElementsByTagName(\"script\")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement(\"script\");o.async=1,o.id=n,o.src=\"https:\u002F\u002Fe.infogram.com\u002Fjs\u002Fdist\u002Fembed-loader-min.js\",d.parentNode.insertBefore(o,d)}}(document,0,\"infogram-async\");\u003C\u002Fscript\u003E","indexStatus":true};</script>
+
+<script delaysrc="https://cdn.jifo.co/js/dist/bundle_vendor-45812f3f22b0dc87ad33-1-webpack.js" class="app-bundle" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jifo.co/js/dist/assets-embed_view-81d7ee5c5f7098d7b94a-1-webpack.js" class="app-bundle" crossorigin="anonymous"></script>
+<script delaysrc="https://cdn.jifo.co/js/dist/embed_viewer-a9e2491d37c19536df37-1-webpack.js" class="app-bundle" async crossorigin="anonymous"></script>
+
+
+
+
+<script>
+    initDelayedScripts = function() {
+        var nodes = document.querySelectorAll('script[delaysrc]');
+        for (var i = 0; i < nodes.length; i++) {
+            var node = nodes[i];
+            node.src = node.attributes.delaysrc.nodeValue;
+            node.attributes.removeNamedItem('delaysrc');
+        }
+    }
+
+    if (initDelayedScriptsWhenReady) {
+        initDelayedScripts();
+    }
+
+    if ('serviceWorker' in navigator) {
+        if (navigator.serviceWorker.controller) {
+            readyForInitialisation();
+
+            if (!serviceWorkerEnabled) {
+                navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                    registrations.forEach(function(registration) {
+                        registration.unregister();
+                    });
+                });
+                readyForInitialisation();
+            }
+        } else if(!serviceWorkerEnabled) {
+            readyForInitialisation();
+        }
+    } else {
+        readyForInitialisation();
+    }
+</script>
+</body>
+</html>
